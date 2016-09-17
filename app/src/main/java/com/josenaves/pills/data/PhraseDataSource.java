@@ -1,7 +1,9 @@
 package com.josenaves.pills.data;
 
+import com.josenaves.pills.data.model.Phrase;
+
 /**
- * Created by josenaves on 9/17/16.
+ * Datasource to access phrase data on database and file
  */
 public interface PhraseDataSource {
 
@@ -9,4 +11,11 @@ public interface PhraseDataSource {
     String SEPARATOR = "|";
 
     void importPhrases();
+
+    interface NewPhraseCallback {
+        void onPhraseSaved(Phrase phrase);
+        void onError(String errorMessage);
+    }
+
+    void savePhrase(Phrase phrase, NewPhraseCallback callback);
 }
