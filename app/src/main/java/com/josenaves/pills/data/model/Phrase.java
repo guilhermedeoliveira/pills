@@ -5,20 +5,21 @@ package com.josenaves.pills.data.model;
  */
 public class Phrase {
 
-    private int id;
+    private long id;
     private String author;
     private String phrase;
     private long views;
     private long shared;
 
-    public Phrase(String author, String phrase, long views, long shared) {
+    public Phrase(long id, String author, String phrase, long views, long shared) {
+        this.id = id;
         this.author = author;
         this.phrase = phrase;
         this.views = views;
         this.shared = shared;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
@@ -55,7 +56,7 @@ public class Phrase {
 
     @Override
     public int hashCode() {
-        int result = id;
+        int result = (int)id;
         result = 31 * result + (author != null ? author.hashCode() : 0);
         result = 31 * result + (phrase != null ? phrase.hashCode() : 0);
         result = 31 * result + (int) (views ^ (views >>> 32));

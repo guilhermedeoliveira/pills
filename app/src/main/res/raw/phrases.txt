@@ -23,7 +23,7 @@ Se você não pode explicar algo de forma simples, então você não entendeu mu
 Descobri que, quanto mais eu trabalho, mais sorte eu pareço ter.|Thomas Jefferson
 O ponto de partida de qualquer conquista é o desejo.|Napoleon Hill
 Levante-se! Tenha coragem e mãos à obra! Use tudo o que você possui para adquirir entendimento.|Esdras
-Tentar e falhar é, pelo menos, aprender. Não chegar a tentar é sofrer a inestimável perda do que poderia ter sido.|(Albino Teixeira)
+Tentar e falhar é, pelo menos, aprender. Não chegar a tentar é sofrer a inestimável perda do que poderia ter sido.|Albino Teixeira
 Tartarugas conhecem as estradas melhor do que os coelhos.|Kahlil Gibran
 Já dizia a canção, quem sabe faz a hora, não espera acontecer, assim é a felicidade, enquanto muitos esperam, outros a buscam, tenha em mente que você é senhor de seu destino.|Luis Alves
 Fazemos nossos caminhos e lhes chamamos destino.|Benjamin Disraeli
@@ -31,7 +31,7 @@ Fazemos nossos caminhos e lhes chamamos destino.|Benjamin Disraeli
 A esperança não é um sonho, mas uma maneira de traduzir os sonhos em realidade.|Cardeal Suenens
 Nunca é tão fácil perder-se como quando se julga conhecer o caminho.|Provérbio chinês
 Jamais se desespere em meio as sombrias aflições de sua vida, pois das nuvens mais negras cai água límpida e fecunda.|Provérbio Chinês
-Se quiser derrubar uma árvore na metade do tempo, passe o dobro do tempo amolando o machado. Provérbio Chinês
+Se quiser derrubar uma árvore na metade do tempo, passe o dobro do tempo amolando o machado.|Provérbio Chinês
 Se não queres que ninguém saiba, não o faças.|Provérbio Chinês
 Lembre-se de cavar o poço bem antes de sentir sede.|Provérbio Chinês
 A língua resiste porque é mole; os dentes cedem porque são duros.|Provérbio Chinês
@@ -61,7 +61,7 @@ O que me preocupa não é o grito dos maus. É o silêncio dos bons.|Martin Luth
 No meio da dificuldade encontra-se a oportunidade.|Albert Einstein
 Quando você quer alguma coisa, todo o universo conspira para que você realize o seu desejo.|Paulo Coelho
 O insucesso é apenas uma oportunidade para recomeçar com mais inteligência.|Henry Ford
-Só se pode alcançar um grande êxito quando nos mantemos fiéis a nós mesmos. Friedrich Nietzsche
+Só se pode alcançar um grande êxito quando nos mantemos fiéis a nós mesmos.|Friedrich Nietzsche
 Quando uma criatura humana desperta para um grande sonho e sobre ele lança toda a força de sua alma, todo o universo conspira a seu favor.|Johann Goethe
 Por vezes sentimos que aquilo que fazemos não é senão uma gota de água no mar. Mas o mar seria menor se lhe faltasse uma gota.|Madre Teresa de Calcutá
 O sucesso é ir de fracasso em fracasso sem perder entusiasmo.|Winston Churchill
@@ -76,7 +76,7 @@ A adversidade desperta em nós capacidades que, em circunstâncias favoráveis, 
 Se fracassar, ao menos que fracasse ousando grandes feitos, de modo que a sua postura não seja nunca a dessas almas frias e tímidas que não conhecem nem a vitória nem a derrota.|Theodore Roosevelt
 Na vida, não existem soluções. Existem forças em marcha: é preciso criá-las e, então, a elas seguem-se as soluções.|Antoine de Saint-Exupéry
 Não abandones as tuas ilusões. Sem elas podes continuar a existir, mas deixas de viver.|Mark Twain
-A esperança não será a prova de um sentido oculto da Existência., uma coisa que merece que se lute por ela?” Ernesto Sábato
+A esperança não será a prova de um sentido oculto da Existência., uma coisa que merece que se lute por ela?|Ernesto Sábato
 Acredite em si próprio e chegará um dia em que os outros não terão outra escolha senão acreditar com você.|Cynthia Kersey
 Quer você acredite que consiga fazer uma coisa ou não, você está certo.|Henry Ford
 Imagine uma nova história para sua vida e acredite nela.|Paulo Coelho
@@ -124,11 +124,11 @@ Não ande apenas pelo caminho traçado, pois ele conduz somente até onde os out
 Quem não compreende um olhar, tampouco há de compreender uma longa explicação.|Mário Quintana
 Todas as riquezas do mundo não valem um bom amigo.|Voltaire
 Para continuar vivendo, preciso da parte de mim que não está em mim, mas guardada em você que eu não conheço.|Caio Fernando Abreu
-Palavras são, na minha nem tão humilde opinião, nossa inesgotável fonte de magia, capazes de ferir e de curar!” J. K. Rowling
+Palavras são, na minha nem tão humilde opinião, nossa inesgotável fonte de magia, capazes de ferir e de curar!|J. K. Rowling
 Não torne as coisas piores, pensando que dói mais do que você realmente está sentindo.|John Boyne
 Bastava proibir-lhe alguma coisa, e isso tornava-se logo o maior desejo de seu coração.|George R. R. Martin
 O medo corta mais profundamente do que as espadas.|George R. R. Martin
-Antes de se sacrificar por alguém, pense nisso: será que ele faria a mesma coisa por você?” Khaled Hosseini
+Antes de se sacrificar por alguém, pense nisso: será que ele faria a mesma coisa por você?|Khaled Hosseini
 Todo mundo é capaz de dominar uma dor, exceto quem a sente.|William Shakespeare
 A alegria evita mil males e prolonga a vida.|William Shakespeare
 Renda-se, como eu me rendi. Mergulhe no que você não conhece como eu mergulhei. Não se preocupe em entender, viver ultrapassa qualquer entendimento.|Clarice Lispector
@@ -140,7 +140,7 @@ Dificuldades preparam pessoas comuns para destinos extraordinários.|C.S Lewis
 Tente mover o mundo. O primeiro passo será mover a si mesmo.|Platão
 Nunca é tarde demais para ser aquilo que sempre se desejou ser.|George Eliot
 Um dia você vai acordar e não haverá mais tempo para fazer as coisas que você sempre quis. Faça-as agora.|Paulo Coelho
-Veja o lado bom das coisas. Você já parou pra pensar o que seriam das oportunidades se não fossem as mudanças?” Jufras Menhal
+Veja o lado bom das coisas. Você já parou pra pensar o que seriam das oportunidades se não fossem as mudanças?|Jufras Menhal
 Mais vale a lágrima da derrota, do que a vergonha de não ter lutado.|Bob Marley
 O destino não é uma questão de sorte, é uma questão de escolha. Não é algo para se esperar, é algo para se conquistar.|William Jennings Bryan
 Tenha fé que sua história vai mudar. Grite bem alto e depois é só acreditar.|Adriano Soares
@@ -156,7 +156,7 @@ Nunca avalie a altura de uma montanha até que atinja o cume. Verá então com e
 A melhor maneira de se ser feliz é contribuir para a felicidade dos outros.|Confúcio
 A persistência é o caminho do êxito.|Charles Chaplin
 O sucesso nasce do querer, da determinação e persistência em se chegar a um objetivo. Mesmo não atingindo o alvo, quem busca e vence obstáculos, no mínimo fará coisas admiráveis.|José de Alencar
-Agir, eis a inteligência verdadeira. Serei o que quiser. Mas tenho que querer o que for. O êxito está em ter êxito, e não em ter condições de êxito. Condições de palácio tem qualquer terra larga, mas onde estará o palácio se não o fizerem ali?” Fernando Pessoa
+Agir, eis a inteligência verdadeira. Serei o que quiser. Mas tenho que querer o que for. O êxito está em ter êxito, e não em ter condições de êxito. Condições de palácio tem qualquer terra larga, mas onde estará o palácio se não o fizerem ali?|Fernando Pessoa
 Determinação, coragem e auto-confiança são fatores decisivos para o sucesso. Se estamos possuídos por uma inabalável determinação, conseguiremos superá-los. Independentemente das circunstâncias, devemos ser sempre humildes, recatados e despidos de orgulho.|Dalai Lama
 A vitalidade é demonstrada não apenas pela persistência, mas pela capacidade de começar de novo.|F. Scott Fitzgerald
 O homem não teria alcançado o possível se, repetidas vezes, não tivesse tentado o impossível.|Max Weber
@@ -181,7 +181,7 @@ Tudo deveria se tornar o mais simples possível, mas não simplificado.|Albert E
 Comece fazendo o que é necessário, depois o que é possível, e de repente você estará fazendo o impossível.|São Francisco de Assis
 O erro acontece de vários modos, enquanto ser correto é possível apenas de um modo.|Aristóteles
 Não é possível ser bom pela metade.|Leon Tolstoi
-A esperança não será a prova de um sentido oculto da Existência., uma coisa que merece que se lute por ela?” Ernesto Sábato
+A esperança não será a prova de um sentido oculto da Existência., uma coisa que merece que se lute por ela?|Ernesto Sábato
 O êxito da vida não se mede pelo caminho que você conquistou, mas sim pelas dificuldades que superou no caminho.|Abraham Lincoln
 Tudo o que um sonho precisa para ser realizado é alguém que acredite que ele possa ser realizado.|Roberto Shinyashiki
 A impaciência é um grande obstáculo para o bom êxito.|Napoleão Bonaparte
@@ -207,7 +207,7 @@ Os grandes homens estão muitas vezes solitários. Mas essa solidão é parte da
 Pensamento duplo indica a capacidade de ter na mente, ao mesmo tempo, duas opiniões contraditórias e aceitar ambas.|George Orwell
 A marca de uma inteligência de primeira ordem é a capacidade de ter duas ideias opostas presentes no espírito ao mesmo tempo e nem por isso deixar de funcionar.|F. Scott Fitzgerald
 A genialidade é a capacidade de realizar aquilo que existe no pensamento.|F. Scott Fitzgerald
-À medida que nos elevamos na escala dos seres, a capacidade nervosa aumenta, ou seja, a capacidade de sofrer. Sofrer e pensar seriam então a mesma coisa?” Gustave Flaubert
+À medida que nos elevamos na escala dos seres, a capacidade nervosa aumenta, ou seja, a capacidade de sofrer. Sofrer e pensar seriam então a mesma coisa?|Gustave Flaubert
 É comum perder-se o bom por querer o melhor.|William Shakespeare
 A renúncia é a libertação. Não querer é poder.|Fernando Pessoa
 Alguns pensam que para se ser amigo basta querê-lo, como se para se estar são bastasse desejar a saúde.|Aristóteles
@@ -242,7 +242,7 @@ Quando sobes a montanha do sucesso não encontras um amigo.|Mark Twain
 O sucesso e o amor preferem o corajoso.|Ovídio
 Recompense o sucesso e o fracasso igualmente - puna a inatividade.|David Kelley
 O maior orador do mundo é o sucesso.|Napoleão Bonaparte
-Perseguir, sem cessar, uma meta: Este é o segredo do sucesso”. Anna Pavlova
+Perseguir, sem cessar, uma meta: Este é o segredo do sucesso.|Anna Pavlova
 Um dos segredos do sucesso é se recusar a deixar que reveses temporários nos derrotem.|Mary Kay
 Você nunca alcança o sucesso verdadeiro a menos que você goste do que está fazendo.|Dale Carnegie
 Parecer o que se é, é um crime; parecer o que não se é, um sucesso. Madame Émile.|Girardin
@@ -254,7 +254,7 @@ Não é possível convencer um crente de coisa alguma, pois suas crenças não s
 Só é possível ensinar uma criança a amar, amando-a.|Johann Goethe
 Por sabedoria entendo a arte de tornar a vida mais agradável e feliz possível.|Arthur Schopenhauer
 É possível repousar sobre qualquer dor de qualquer desventura, menos sobre o arrependimento. No arrependimento não há descanso nem paz, e por isso é a maior ou a mais amarga de todas as desgraças.|Giacomo Leopardi
-O mais belo estado da vida é a dependência livre e voluntária: e como seria ela possível sem amor?” Johann Goethe
+O mais belo estado da vida é a dependência livre e voluntária: e como seria ela possível sem amor?|Johann Goethe
 A um homem bom não é possível que ocorra nenhum mal, nem em vida nem em morte.|Sócrates
 Não se pode acreditar que é possível ser feliz procurando a infelicidade alheia.|Sêneca
 O homem que empenha todo o seu trabalho e imaginação em oferecer por um dólar o mais possível, em vez de menos, está condenado ao sucesso.|Henry Ford
@@ -357,7 +357,7 @@ A arte de escutar é como uma luz que dissipa a escuridão da ignorância.|Dalai
 A verdadeira compaixão não consiste em sofrer pelo outro. Se ajudamos uma pessoa que sofre e nos deixamos invadir por seu sofrimento, é que somos ineficazes e estamos tão somente reforçando nosso ego.|Dalai Lama
 Algumas pessoas têm amor por você, outras têm raiva. O que sentem nem sempre depende de seu comportamento. As reações delas às vezes são justas, outras vezes são injustas. Dê sem contabilizar. E esteja atento às necessidades delas.|Dalai Lama
 Pouco importa o julgamento dos outros. Os seres humanos são tão contraditórios que é impossível atender às suas demandas para satisfazê-los. Tenha em mente simplesmente ser autêntico e verdadeiro.|Dalai Lama
-Uma pessoa não é a terra nem a água; nem o vento ou o espaço. Também não é a sua consciência, muito menos o conjunto de consciências; mas,fora estes atributos, o que é o indivíduo?” Dalai Lama
+Uma pessoa não é a terra nem a água; nem o vento ou o espaço. Também não é a sua consciência, muito menos o conjunto de consciências; mas,fora estes atributos, o que é o indivíduo?|Dalai Lama
 Aprimorar a paciência requer alguém que nos faça mal e nos permita praticar a tolerância.|Dalai Lama
 Reunir-se é um começo, permanecer juntos é um progresso, e trabalhar juntos é um sucesso.|Napoleon Hill
 Precisamos dar um sentido humano às nossas construções. E, quando o amor ao dinheiro, ao sucesso nos estiver deixando cegos, saibamos fazer pausas para olhar os lírios do campo e as aves do céu.|Érico Veríssimo
@@ -369,7 +369,7 @@ Inovação distingue entre um líder e um seguidor.|Steve Jobs
 Foco é dizer não.|Steve Jobs
 Você pode encarar um erro como uma besteira a ser esquecida, ou como um resultado que aponta uma nova direção.|Steve Jobs
 Tenha coragem de seguir o que seu coração e sua intuição dizem. Eles já sabem o que você realmente deseja. Todo resto é secundário.|Steve Jobs
-Estamos aqui para fazer alguma diferença no universo, se não, porque estar aqui?” Steve Jobs
+Estamos aqui para fazer alguma diferença no universo, se não, porque estar aqui?|Steve Jobs
 Concentre-se naquilo que você é bom, delegue todo o resto.|Steve Jobs
 Obrigado a todas as pessoas que contribuíram para meu sucesso e para meu crescimento como pessoa. Sou o resultado da confiança e da força de cada um de vocês.|Augusto Branco
 Se quiser ter prosperidade por um ano, cultive grãos. Por dez cultive árvores. Mas para ter sucesso por 100 anos cultive gente.|Confúcio
@@ -412,7 +412,7 @@ A escolha é possível, em certo sentido, porém o que não é possível é não
 Quando alguém encontra seu caminho precisa ter coragem suficiente para dar passos errados. As decepções, as derrotas, o desânimo são ferramentas que Deus utiliza para mostrar a estrada.|Paulo Coelho
 O mundo está nas mãos daqueles que têm a coragem de sonhar e correr o risco de viver seus sonhos.|Paulo Coelho
 Disciplina é liberdade; Compaixão é fortaleza; Ter bondade é ter coragem.|Renato Russo
-Até bem pouco tempo atrás poderíamos mudar o mundo. Quem roubou nossa coragem?” Renato Russo
+Até bem pouco tempo atrás poderíamos mudar o mundo. Quem roubou nossa coragem?|Renato Russo
 O homem que tem coragem de desperdiçar uma hora do seu tempo não descobriu o valor da vida.|Charles Darwin
 Amar é um ato de coragem.|Paulo Freire
 A verdadeira coragem é ir atrás de seus sonhos mesmo quando todos dizem que ele é impossível.|Cora Coralina
@@ -424,7 +424,7 @@ Todo mundo gostaria de se mudar para um lugar mágico. Mas são poucos os que t�
 Eles pensaram que eu tinha coragem, mas eles perceberam tudo errado. Eu só estava com medo das coisas mais importantes.|Charles Bukowski
 Quem tem auto-estima tem muita coragem, se mete em tudo, não tem medo de errar.|Luiz Gasparetto
 Coragem, às vezes, é desapego. É parar de se esticar em vão, para trazer a linha de volta. É aceitar doer inteiro até florir de novo.|Caio Fernando Abreu
-É como Doritos Nacho. Não tenho coragem de levar pra casa, mas se tiver numa festa eu como” Tati Bernardi
+É como Doritos Nacho. Não tenho coragem de levar pra casa, mas se tiver numa festa eu como|Tati Bernardi
 Aprendi que a coragem não é a ausência do medo, mas o triunfo sobre ele. O homem corajoso não é aquele que não sente medo, mas o que conquista esse medo.|Nelson Mandela
 Todos nós sabemos o que é o medo. Mas a paixão nos faz ter coragem.|Paulo Coelho
 Esta alma, ou vida dentro de nós, sem opção concorda com a vida exterior. Se alguém tiver a coragem de perguntá-la o que pensa, ela está sempre dizendo exatamente o oposto do que as outras pessoas dizem.|Virginia Woolf
@@ -440,19 +440,19 @@ Se você falar com um homem numa linguagem que ele compreende, isso entra na cab
 Devemos promover a coragem onde há medo, promover o acordo onde existe conflito, e inspirar esperança onde há desespero.|Nelson Mandela
 Você não é amado porque você é bom, você é bom porque é amado.|Nelson Mandela
 Eu sou o capitão da minha alma.|Nelson Mandela
-Fofocar sobre os outros é certamente um defeito, mas é uma virtude quando aplicado a si mesmo” Nelson Mandela
+Fofocar sobre os outros é certamente um defeito, mas é uma virtude quando aplicado a si mesmo.|Nelson Mandela
 Há vitórias que são importantes apenas para aqueles que as conseguem.|Nelson Mandela
 Não poderás encontrar nenhuma paixão se te conformas com uma vida que é inferior àquela que és capaz de viver.|Nelson Mandela
 A morte é inevitável. Quando um homem fez o que considera seu dever para com seu povo e seu país, pode descansar em paz.|Nelson Mandela
-Na vida, nós devemos ter raízes, e não âncoras. Raiz alimenta, âncora imobiliza. Quem tem âncoras vive apenas a nostalgia e não a saudade. Nostalgia é uma lembrança que dói, saudade é uma lembrança que alegra Mario Sergio Cortella
+Na vida, nós devemos ter raízes, e não âncoras. Raiz alimenta, âncora imobiliza. Quem tem âncoras vive apenas a nostalgia e não a saudade. Nostalgia é uma lembrança que dói, saudade é uma lembrança que alegra.|Mario Sergio Cortella
 É necessário cuidar da ética para não anestesiarmos a nossa consciência e começarmos a achar que tudo é normal.|Mario Sergio Cortella
 O conhecimento serve para encantar as pessoas, não para humilhá-las.|Mario Sergio Cortella
 Se não quiser uma cidade suja, não deposite lixo na urna.|Mario Sergio Cortella
-O impossível não é um fato: é uma opinião” Mario Sergio Cortella
+O impossível não é um fato: é uma opinião|Mario Sergio Cortella
 Quem sabe, divide. Quem não sabe, pergunta.|Mario Sergio Cortella
 Você é volúvel ou é velho? Adotar todas as mudanças é ser volúvel! Recusar todas é ser velho! Portanto, é preciso equilibrar essa condição.|Mario Sergio Cortella
-Quando o modelo de vida leva a um esgotamento, é fundamental questionar se vale a pena continuar no mesmo caminho Mario Sergio Cortella
+Quando o modelo de vida leva a um esgotamento, é fundamental questionar se vale a pena continuar no mesmo caminho|Mario Sergio Cortella
 Só sei que nada sei por completo. Só sei que nada sei que só eu saiba. Só sei que nada sei que eu não possa vir a saber. Só sei que nada sei que outra pessoa não saiba. Só sei que nada sei que eu e outra pessoa não saibamos juntos.|Mario Sergio Cortella
-Por que eu preciso morar em grandes cidades, viver desesperado dentro de um carro para lá e para cá, restringir imensamente o meu tempo de convivência com as pessoas de quem eu gosto, reduzir o meu ócio criativo para ficar num lugar onde vão me oferecer apenas e tão somente dinheiro?” Mario Sergio Cortella
+Por que eu preciso morar em grandes cidades, viver desesperado dentro de um carro para lá e para cá, restringir imensamente o meu tempo de convivência com as pessoas de quem eu gosto, reduzir o meu ócio criativo para ficar num lugar onde vão me oferecer apenas e tão somente dinheiro?|Mario Sergio Cortella
 Nós, brasileiros, temos um vício, que é muito perigoso, de nos contentar muitas vezes com o possível, em vez de procurarmos o melhor.|Mario Sergio Cortella
 Sim, sem dinheiro não se vive, mas só com dinheiro não se vive.|Mario Sergio Cortella

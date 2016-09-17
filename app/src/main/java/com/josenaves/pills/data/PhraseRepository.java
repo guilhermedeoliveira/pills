@@ -4,6 +4,8 @@ import android.util.Log;
 
 import com.josenaves.pills.data.model.Phrase;
 
+import java.util.List;
+
 public class PhraseRepository implements PhraseDataSource {
 
     private static final String TAG = PhraseRepository.class.getSimpleName();
@@ -33,5 +35,15 @@ public class PhraseRepository implements PhraseDataSource {
                 callback.onError(errorMessage);
             }
         });
+    }
+
+    @Override
+    public long countPhrases() {
+        return phraseDataSource.countPhrases();
+    }
+
+    @Override
+    public List<Phrase> getPhrasesByAuthor(String author) {
+        return phraseDataSource.getPhrasesByAuthor(author);
     }
 }
