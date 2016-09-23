@@ -1,3 +1,11 @@
 <resources>
+    <!-- A -->
+    <string name="author">Author</string>
+
+    <!-- P -->
     <string name="app_name">Pills</string>
+    <string name="phrase">This is a text phrase</string>
+
+
+
 </resources>
