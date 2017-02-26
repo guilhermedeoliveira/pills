@@ -3,6 +3,9 @@ package com.josenaves.pills;
 import android.app.Application;
 
 import com.crashlytics.android.Crashlytics;
+import com.josenaves.pills.data.Injection;
+import com.josenaves.pills.data.PhraseRepository;
+import com.josenaves.pills.data.local.PillsDbHelper;
 
 import io.fabric.sdk.android.Fabric;
 
@@ -16,5 +19,9 @@ public class PillsApplication extends Application {
         super.onCreate();
 
         Fabric.with(this, new Crashlytics());
+        PillsDbHelper.getInstance(this);
+
+        PhraseRepository repo = Injection.providePhraseRepository(this);
+        repo.importPhrases();
     }
 }
