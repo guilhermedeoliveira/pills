@@ -52,15 +52,17 @@ public class PhraseActivity extends AppCompatActivity {
         TextView phraseView = (TextView) findViewById(R.id.phrase_text_view);
         TextView authorView = (TextView) findViewById(R.id.author_text_view);
 
-        cursor.moveToFirst();
+        boolean success = cursor.moveToFirst();
+        if (success) {
+            int phraseColumnIndex = cursor.getColumnIndex(PhraseEntry.COLUMN_NAME_PHRASE);
+            int authorColumnIndex = cursor.getColumnIndex(PhraseEntry.COLUMN_NAME_AUTHOR);
+            String phrase = cursor.getString(phraseColumnIndex);
+            String author = cursor.getString(authorColumnIndex);
 
-        int phraseColumnIndex = cursor.getColumnIndex(PhraseEntry.COLUMN_NAME_PHRASE);
-        int authorColumnIndex = cursor.getColumnIndex(PhraseEntry.COLUMN_NAME_AUTHOR);
-        String phrase = cursor.getString(phraseColumnIndex);
-        String author = cursor.getString(authorColumnIndex);
+            phraseView.setText(phrase);
+            authorView.setText(author);
+        }
 
-        phraseView.setText(phrase);
-        authorView.setText(author);
 
         cursor.close();
 
