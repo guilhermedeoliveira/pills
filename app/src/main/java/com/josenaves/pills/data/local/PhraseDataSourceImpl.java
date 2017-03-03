@@ -69,6 +69,33 @@ public class PhraseDataSourceImpl implements PhraseDataSource {
     }
 
     @Override
+    public Phrase getRandomPhrase() {
+        // TODO este método deve ser alterado para SORTEAR uma frase
+
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        Phrase phrase = null;
+
+        final Cursor c = db.query(
+                PhraseContract.PhraseEntry.TABLE_NAME,
+                getProjection(),
+                null,
+                null,
+                null, null, null);
+
+        if (c != null && c.getCount() > 0) {
+            if (c.moveToNext()) {
+                phrase = createPhrase(c);
+            }
+        }
+
+        if (c != null) {
+            c.close();
+        }
+
+        return phrase;
+    }
+
+    @Override
     public void savePhrase(Phrase phrase, NewPhraseCallback callback) {
         try {
             SQLiteDatabase db = dbHelper.getWritableDatabase();

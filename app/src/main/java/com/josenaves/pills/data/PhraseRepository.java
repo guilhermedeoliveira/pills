@@ -46,4 +46,9 @@ public class PhraseRepository implements PhraseDataSource {
     public List<Phrase> getPhrasesByAuthor(String author) {
         return phraseDataSource.getPhrasesByAuthor(author);
     }
+
+    @Override
+    public Phrase getRandomPhrase() {
+        return phraseDataSource.getRandomPhrase();
+    }
 }

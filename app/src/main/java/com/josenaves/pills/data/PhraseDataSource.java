@@ -21,5 +21,8 @@ public interface PhraseDataSource {
 
     void savePhrase(Phrase phrase, NewPhraseCallback callback);
     long countPhrases();
+
+    Phrase getRandomPhrase();
+
     List<Phrase> getPhrasesByAuthor(String author);
 }
