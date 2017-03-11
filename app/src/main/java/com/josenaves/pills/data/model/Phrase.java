@@ -19,6 +19,11 @@ public class Phrase {
         this.shared = shared;
     }
 
+    public Phrase(String author, String phrase) {
+        this.author = author;
+        this.phrase = phrase;
+    }
+
     public long getId() {
         return id;
     }

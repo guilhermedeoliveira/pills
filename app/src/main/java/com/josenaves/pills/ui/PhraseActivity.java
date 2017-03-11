@@ -27,7 +27,8 @@ public class PhraseActivity extends AppCompatActivity {
 
         // Create the presenter
         presenter = new PhrasePresenter(
-                Injection.providePhraseRepository(getApplicationContext()),
+                Injection.providePhraseRepository(this),
+                Injection.provideSessionRepository(this),
                 phraseView);
     }
 
@@ -35,43 +36,4 @@ public class PhraseActivity extends AppCompatActivity {
         super.onResume();
         presenter.start();
     }
-
-
-//    /**
-//     * Get a phrase in database
-//     */
-//    private void getPhraseInDatabase() {
-//        SQLiteDatabase db = dbHelper.getReadableDatabase();
-//
-//        String[] projection = {
-//                PhraseEntry.COLUMN_NAME_PHRASE,
-//                PhraseEntry.COLUMN_NAME_AUTHOR
-//        };
-//        Cursor cursor = db.query(
-//                PhraseEntry.TABLE_NAME,
-//                projection,
-//                null,
-//                null,
-//                null,
-//                null,
-//                null);
-//
-//        TextView phraseView = (TextView) findViewById(R.id.phrase_text_view);
-//        TextView authorView = (TextView) findViewById(R.id.author_text_view);
-//
-//        boolean success = cursor.moveToFirst();
-//        if (success) {
-//            int phraseColumnIndex = cursor.getColumnIndex(PhraseEntry.COLUMN_NAME_PHRASE);
-//            int authorColumnIndex = cursor.getColumnIndex(PhraseEntry.COLUMN_NAME_AUTHOR);
-//            String phrase = cursor.getString(phraseColumnIndex);
-//            String author = cursor.getString(authorColumnIndex);
-//
-//            phraseView.setText(phrase);
-//            authorView.setText(author);
-//        }
-//
-//
-//        cursor.close();
-//
-//    }
 }

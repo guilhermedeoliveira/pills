@@ -49,6 +49,7 @@ public class PhraseRepository implements PhraseDataSource {
 
     @Override
     public Phrase getRandomPhrase() {
+        Log.d(TAG, "Getting random phrase...");
         return phraseDataSource.getRandomPhrase();
     }
 }
