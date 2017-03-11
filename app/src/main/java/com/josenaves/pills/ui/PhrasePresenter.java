@@ -68,10 +68,8 @@ public class PhrasePresenter implements PhraseContract.Presenter {
 
         // save session on database
         sessionRepository
-                .saveSession(new Session(
-                        phrase.getPhrase(),
-                        phrase.getAuthor(),
-                        DateUtils.getCurrentDate()));
+                .saveSession(new Session(phrase.getPhrase(), phrase.getAuthor(),
+                        DateUtils.getCurrentDate(), true));
     }
 
     @Override

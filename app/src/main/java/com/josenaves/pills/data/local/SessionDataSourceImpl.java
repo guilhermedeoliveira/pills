@@ -27,6 +27,7 @@ public class SessionDataSourceImpl implements SessionDataSource {
         edit.putString(Session.PHRASE, session.getCurrentPhrase());
         edit.putString(Session.AUTHOR, session.getAuthor());
         edit.putString(Session.DATE, session.getDate());
+        edit.putBoolean(Session.IMPORTED, session.isImported());
         edit.commit();
     }
 
@@ -36,6 +37,7 @@ public class SessionDataSourceImpl implements SessionDataSource {
         String phrase = pref.getString(Session.PHRASE, "");
         String date = pref.getString(Session.DATE, "");
         String author = pref.getString(Session.AUTHOR, "");
-        return new Session(phrase, author, date);
+        boolean imported = pref.getBoolean(Session.IMPORTED, false);
+        return new Session(phrase, author, date, imported);
     }
 }
