@@ -38,6 +38,12 @@ public final class Session {
         return currentPhrase;
     }
 
+    // TODO Verificar a criação desse método para usar no presenter.sharePhrase(Activity activity)
+    public String getCurrentCompletePhraseAndAuthor() {
+        String currentCompletePhraseAndAuthor = currentPhrase + " \"" + author + "\"";
+        return currentCompletePhraseAndAuthor;
+    }
+
     public String getDate() {
         return date;
     }

@@ -1,5 +1,7 @@
 package com.josenaves.pills.ui;
 
+import android.app.Activity;
+
 import com.josenaves.pills.BasePresenter;
 import com.josenaves.pills.BaseView;
 import com.josenaves.pills.data.model.Phrase;
@@ -8,13 +10,13 @@ public interface PhraseContract {
 
     interface View extends BaseView<Presenter> {
         void setLoadingIndicator(boolean active);
-        void showPhrase(Phrase phrase);
+        void setPhrase(Phrase phrase); // TODO Modifiquei a assinatura do método
         boolean isActive();
     }
 
     interface Presenter extends BasePresenter {
         void loadPhrase();
-        void sharePhrase();
+        void sharePhrase(Activity activity); // TODO Coloquei a Activity como input
         void markAsFavorite();
     }
 }

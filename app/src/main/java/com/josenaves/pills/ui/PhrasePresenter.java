@@ -1,9 +1,17 @@
 package com.josenaves.pills.ui;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.Log;
 
+import android.support.v4.app.ShareCompat;
+import android.text.TextUtils;
+import android.util.Log;
+
+import com.josenaves.pills.PillsApplication;
 import com.josenaves.pills.BuildConfig;
 import com.josenaves.pills.data.PhraseRepository;
 import com.josenaves.pills.data.SessionRepository;
@@ -57,7 +65,7 @@ public class PhrasePresenter implements PhraseContract.Presenter {
             } else {
                 if (BuildConfig.DEBUG) Log.d(TAG, "No need to get another phrase for today...");
                 Phrase phrase = new Phrase(session.getAuthor(), session.getCurrentPhrase());
-                phraseView.showPhrase(phrase);
+                phraseView.setPhrase(phrase);
             }
         }
     }
@@ -65,7 +73,7 @@ public class PhrasePresenter implements PhraseContract.Presenter {
     private void getAndShowNewPhrase() {
         // make it happen
         Phrase phrase = phraseRepository.getRandomPhrase();
-        if (phrase != null) phraseView.showPhrase(phrase);
+        if (phrase != null) phraseView.setPhrase(phrase);
 
         if (BuildConfig.DEBUG) Log.d(TAG, phrase.toString());
 
@@ -79,8 +87,15 @@ public class PhrasePresenter implements PhraseContract.Presenter {
     }
 
     @Override
-    public void sharePhrase() {
+    public void sharePhrase(Activity activity) {
         // TODO
+        String mimeType = "text/plain";
+        ShareCompat.IntentBuilder
+                .from(activity)
+                .setType(mimeType)
+                .setText(sessionRepository.loadSession()
+                        .getCurrentCompletePhraseAndAuthor())// TODO Verificar se essa solução está ok
+                .startChooser();
     }
 
     @Override
