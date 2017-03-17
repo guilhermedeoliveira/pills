@@ -149,6 +149,18 @@ public class PhraseDataSourceImpl implements PhraseDataSource {
         return phrases;
     }
 
+    @Override
+    public void incrementPhraseViews(Phrase phrase) {
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        String filter = String.format("%s=%d", PhraseContract.PhraseEntry._ID, phrase.getId());
+        ContentValues values = new ContentValues();
+        values.put(PhraseContract.PhraseEntry.COLUMN_NAME_PHRASE, phrase.getViews() + 1);
+
+        int rows = db.update(PhraseContract.PhraseEntry.TABLE_NAME, values, filter, null);
+
+        Log.d(TAG, String.format("Rows updated: %s", rows));
+    }
+
     private Phrase createPhrase(final Cursor cursor) {
         long id = cursor.getLong(cursor.getColumnIndex(PhraseContract.PhraseEntry._ID));
         String phrase = cursor.getString(cursor.getColumnIndex(PhraseContract.PhraseEntry.COLUMN_NAME_PHRASE));

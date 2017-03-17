@@ -70,6 +70,9 @@ public class PhrasePresenter implements PhraseContract.Presenter {
         sessionRepository
                 .saveSession(new Session(phrase.getPhrase(), phrase.getAuthor(),
                         DateUtils.getCurrentDate(), true));
+
+        // increment the number of views
+        phraseRepository.incrementPhraseViews(phrase);
     }
 
     @Override
