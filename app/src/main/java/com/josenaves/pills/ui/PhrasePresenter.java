@@ -61,6 +61,7 @@ public class PhrasePresenter implements PhraseContract.Presenter {
         }
     }
 
+    // TODO Modifiquei esse método
     private void getAndShowNewPhrase() {
         // make it happen
         Phrase phrase = phraseRepository.getRandomPhrase();
@@ -73,8 +74,12 @@ public class PhrasePresenter implements PhraseContract.Presenter {
     }
 
     @Override
-    public void sharePhrase() {
-        // TODO
+    public void getPhraseToShare() {
+        // TODO Verificar a implementação
+        String shareablePhrase = sessionRepository.loadSession()
+                .getShareablePhrase();
+
+        phraseView.showShareChooser(shareablePhrase);
     }
 
     @Override

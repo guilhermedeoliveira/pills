@@ -38,6 +38,15 @@ public final class Session {
         return currentPhrase;
     }
 
+    public String getShareablePhrase() {
+        StringBuilder builder = new StringBuilder();
+        builder.append(currentPhrase).append("\n")
+                .append("\"").append(author).append("\"");;
+        String shareablePhrase = builder.toString();
+
+        return shareablePhrase;
+    }
+
     public String getDate() {
         return date;
     }

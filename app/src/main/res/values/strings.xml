@@ -1,11 +1,11 @@
 <resources>
     <!-- A -->
     <string name="author">Author</string>
+    <string name="action_settings">Configurações</string>
+    <string name="action_share">Compartilhar</string>
 
     <!-- P -->
     <string name="app_name">Pills</string>
     <string name="phrase">This is a text phrase</string>
-
-
 
 </resources>

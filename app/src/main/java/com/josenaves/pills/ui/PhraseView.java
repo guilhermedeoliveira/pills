@@ -1,6 +1,8 @@
 package com.josenaves.pills.ui;
 
+import android.app.Activity;
 import android.content.Context;
+import android.support.v4.app.ShareCompat;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -54,10 +56,23 @@ public class PhraseView extends LinearLayout implements PhraseContract.View {
 
     }
 
+    // TODO Modifiquei a assinatura do método
     @Override
     public void showPhrase(Phrase phrase) {
         phraseTextView.setText(phrase.getPhrase());
         authorTextView.setText(phrase.getAuthor());
+    }
+
+    // TODO Verificar como esta implementação
+    @Override
+    public void showShareChooser(String phrase) {
+        String mimeType = "text/plain";
+
+        ShareCompat.IntentBuilder
+                .from((Activity) getContext())
+                .setType(mimeType)
+                .setText(phrase)
+                .startChooser();
     }
 
     @Override

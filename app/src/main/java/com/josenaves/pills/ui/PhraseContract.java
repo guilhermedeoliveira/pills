@@ -10,12 +10,12 @@ public interface PhraseContract {
         void setLoadingIndicator(boolean active);
         void showPhrase(Phrase phrase);
         boolean isActive();
+        void showShareChooser(String phrase); // TODO new method for the chooser
     }
 
     interface Presenter extends BasePresenter {
         void loadPhrase();
-        void sharePhrase();
+        void getPhraseToShare(); // TODO Modifiquei a assinatura
         void markAsFavorite();
     }
 }
-

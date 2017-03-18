@@ -2,7 +2,10 @@ package com.josenaves.pills.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 
+import com.josenaves.pills.R;
 import com.josenaves.pills.data.Injection;
 
 import static com.google.common.base.Preconditions.checkNotNull;
@@ -35,5 +38,21 @@ public class PhraseActivity extends AppCompatActivity {
     @Override protected void onResume() {
         super.onResume();
         presenter.start();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_share:
+                presenter.getPhraseToShare(); // TODO Método modificado no presenter
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
