@@ -1,18 +1,11 @@
 package com.josenaves.pills.ui;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.Log;
 
-import android.support.v4.app.ShareCompat;
-import android.text.TextUtils;
-import android.util.Log;
-
-import com.josenaves.pills.PillsApplication;
 import com.josenaves.pills.BuildConfig;
+
 import com.josenaves.pills.data.PhraseRepository;
 import com.josenaves.pills.data.SessionRepository;
 import com.josenaves.pills.data.model.Phrase;
@@ -87,17 +80,12 @@ public class PhrasePresenter implements PhraseContract.Presenter {
     }
 
     @Override
-    public void sharePhrase(Activity activity) {
-        // TODO
-        String mimeType = "text/plain";
+    public void getPhraseToShare() {
+        // TODO Verificar a implementação
         String shareablePhrase = sessionRepository.loadSession()
                 .getShareablePhrase();
 
-        ShareCompat.IntentBuilder
-                .from(activity)
-                .setType(mimeType)
-                .setText(shareablePhrase)
-                .startChooser();
+        phraseView.showShareChooser(shareablePhrase);
     }
 
     @Override
