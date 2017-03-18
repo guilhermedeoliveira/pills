@@ -10,21 +10,16 @@ import com.josenaves.pills.data.Injection;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-/**
- * Created by guilhermeoliveira on 23/09/16.
- */
-
 public class PhraseActivity extends AppCompatActivity {
 
     private PhrasePresenter presenter;
-    private PhraseView phraseView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         // get the view
-        phraseView = new PhraseView(this);
+        PhraseView phraseView = new PhraseView(this);
         checkNotNull(phraseView, "phraseView not found");
         setContentView(phraseView);
 
@@ -32,6 +27,7 @@ public class PhraseActivity extends AppCompatActivity {
         presenter = new PhrasePresenter(
                 Injection.providePhraseRepository(this),
                 Injection.provideSessionRepository(this),
+                Injection.provideTrackingRepository(),
                 phraseView);
     }
 
@@ -50,7 +46,7 @@ public class PhraseActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_share:
-                presenter.getPhraseToShare(); // TODO Método modificado no presenter
+                presenter.getPhraseToShare();
                 return true;
         }
         return super.onOptionsItemSelected(item);
