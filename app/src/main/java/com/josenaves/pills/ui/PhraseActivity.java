@@ -48,6 +48,10 @@ public class PhraseActivity extends AppCompatActivity {
             case R.id.action_share:
                 presenter.getPhraseToShare();
                 return true;
+
+            case R.id.action_favorite:
+                presenter.markAsFavorite();
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }
