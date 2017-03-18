@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
+import com.josenaves.pills.BuildConfig;
 import com.josenaves.pills.R;
 import com.josenaves.pills.data.PhraseDataSource;
 import com.josenaves.pills.data.model.Phrase;
@@ -50,7 +51,7 @@ public class PhraseDataSourceImpl implements PhraseDataSource {
                 savePhrase(phrase, new NewPhraseCallback() {
                     @Override
                     public void onPhraseSaved(Phrase phrase) {
-                        Log.d(TAG, "Phrase successfully imported.");
+                        if (BuildConfig.DEBUG) Log.d(TAG, "Phrase successfully imported.");
                     }
 
                     @Override
@@ -154,11 +155,10 @@ public class PhraseDataSourceImpl implements PhraseDataSource {
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String filter = String.format("%s=%d", PhraseContract.PhraseEntry._ID, phrase.getId());
         ContentValues values = new ContentValues();
-        values.put(PhraseContract.PhraseEntry.COLUMN_NAME_PHRASE, phrase.getViews() + 1);
+        values.put(PhraseContract.PhraseEntry.COLUMN_NAME_VIEWS, phrase.getViews() + 1);
 
         int rows = db.update(PhraseContract.PhraseEntry.TABLE_NAME, values, filter, null);
-
-        Log.d(TAG, String.format("Rows updated: %s", rows));
+        if (BuildConfig.DEBUG) Log.d(TAG, String.format("Rows updated: %s", rows));
     }
 
     private Phrase createPhrase(final Cursor cursor) {
