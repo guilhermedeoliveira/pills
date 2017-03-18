@@ -56,7 +56,7 @@ public class PhraseView extends LinearLayout implements PhraseContract.View {
 
     // TODO Modifiquei a assinatura do método
     @Override
-    public void setPhrase(Phrase phrase) {
+    public void showPhrase(Phrase phrase) {
         phraseTextView.setText(phrase.getPhrase());
         authorTextView.setText(phrase.getAuthor());
     }

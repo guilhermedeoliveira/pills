@@ -10,7 +10,7 @@ public interface PhraseContract {
 
     interface View extends BaseView<Presenter> {
         void setLoadingIndicator(boolean active);
-        void setPhrase(Phrase phrase); // TODO Modifiquei a assinatura do método
+        void showPhrase(Phrase phrase);
         boolean isActive();
     }
 

@@ -38,10 +38,13 @@ public final class Session {
         return currentPhrase;
     }
 
-    // TODO Verificar a criação desse método para usar no presenter.sharePhrase(Activity activity)
-    public String getCurrentCompletePhraseAndAuthor() {
-        String currentCompletePhraseAndAuthor = currentPhrase + " \"" + author + "\"";
-        return currentCompletePhraseAndAuthor;
+    public String getShareablePhrase() {
+        StringBuilder builder = new StringBuilder();
+        builder.append(currentPhrase).append("\n")
+                .append("\"").append(author).append("\"");;
+        String shareablePhrase = builder.toString();
+
+        return shareablePhrase;
     }
 
     public String getDate() {

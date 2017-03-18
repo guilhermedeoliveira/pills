@@ -46,7 +46,6 @@ public class PhraseActivity extends AppCompatActivity {
         return true;
     }
 
-    // TODO Verificar se esse método aqui está ok
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
