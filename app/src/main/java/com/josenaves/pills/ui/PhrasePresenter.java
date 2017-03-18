@@ -64,7 +64,7 @@ public class PhrasePresenter implements PhraseContract.Presenter {
             } else {
                 Log.d(TAG, "No need to get another phrase for today...");
                 Phrase phrase = new Phrase(session.getAuthor(), session.getCurrentPhrase());
-                phraseView.setPhrase(phrase);
+                phraseView.showPhrase(phrase);
             }
         }
     }
@@ -73,7 +73,7 @@ public class PhrasePresenter implements PhraseContract.Presenter {
     private void getAndShowNewPhrase() {
         // make it happen
         Phrase phrase = phraseRepository.getRandomPhrase();
-        if (phrase != null) phraseView.setPhrase(phrase);
+        if (phrase != null) phraseView.showPhrase(phrase);
 
         // save session on database
         sessionRepository
@@ -81,16 +81,17 @@ public class PhrasePresenter implements PhraseContract.Presenter {
                         DateUtils.getCurrentDate(), true));
     }
 
-    // TODO Mudei a assinatura do método. Colocar a Activity como input resolveu o meu problema. Verificar se é ok
     @Override
     public void sharePhrase(Activity activity) {
         // TODO
         String mimeType = "text/plain";
+        String shareablePhrase = sessionRepository.loadSession()
+                .getShareablePhrase();
+
         ShareCompat.IntentBuilder
                 .from(activity)
                 .setType(mimeType)
-                .setText(sessionRepository.loadSession()
-                        .getCurrentCompletePhraseAndAuthor())// TODO Verificar se essa solução está ok
+                .setText(shareablePhrase)
                 .startChooser();
     }
 
