@@ -50,7 +50,7 @@ public class PhraseActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_share:
-                presenter.sharePhrase(this); // TODO Creio que respeita o padrão, pois deleguei ao presenter
+                presenter.getPhraseToShare(); // TODO Método modificado no presenter
                 return true;
         }
         return super.onOptionsItemSelected(item);
