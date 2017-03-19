@@ -10,6 +10,14 @@
         app:showAsAction="ifRoom"/>
 
     <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/checkbox_favorite"
+        android:title="@string/action_favorite"
+        android:checkable="true"
+        android:checked="false"
+        app:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/action_settings"
         android:title="@string/action_settings"
         app:showAsAction="never" />

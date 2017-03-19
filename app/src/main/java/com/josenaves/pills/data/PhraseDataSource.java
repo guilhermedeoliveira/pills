@@ -25,6 +25,7 @@ public interface PhraseDataSource {
     Phrase getRandomPhrase();
 
     List<Phrase> getPhrasesByAuthor(String author);
+    void updateFavorite(int phraseId, boolean favorite);
 
     void incrementPhraseViews(Phrase phrase);
 }

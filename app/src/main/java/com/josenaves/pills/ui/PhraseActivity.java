@@ -48,7 +48,22 @@ public class PhraseActivity extends AppCompatActivity {
             case R.id.action_share:
                 presenter.getPhraseToShare();
                 return true;
+
+            case R.id.action_favorite:
+                if (item.isChecked()) {
+                    item.setChecked(false);
+                    item.setIcon(R.drawable.ic_favorite_off);
+                    presenter.unmarkAsFavorite();
+                } else {
+                    item.setChecked(true);
+                    item.setIcon(R.drawable.ic_favorite_on);
+                    presenter.markAsFavorite();
+                }
+
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
     }
 }

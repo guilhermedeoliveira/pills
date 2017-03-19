@@ -17,6 +17,7 @@ interface PhraseContract {
         void loadPhrase();
         void getPhraseToShare();
         void markAsFavorite();
+        void unmarkAsFavorite();
         void trackShareEvent(String phrase);
     }
 }

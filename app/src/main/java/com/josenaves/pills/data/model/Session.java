@@ -6,6 +6,7 @@ package com.josenaves.pills.data.model;
  */
 public final class Session {
 
+    public static final String PHRASE_ID = "current_phrase_id";
     public static final String PHRASE = "current_phrase";
     public static final String AUTHOR = "author";
     public static final String DATE = "date";
@@ -16,6 +17,9 @@ public final class Session {
 
     /** author */
     private String author;
+
+    /** current phrase id */
+    private int phraseId;
 
     /** date when the phrase was drawn */
     private String date;
@@ -29,8 +33,9 @@ public final class Session {
         this.date = date;
     }
 
-    public Session(String currentPhrase, String author, String date, boolean imported) {
+    public Session(int phraseId, String currentPhrase, String author, String date, boolean imported) {
         this(currentPhrase, author, date);
+        this.phraseId = phraseId;
         this.imported = imported;
     }
 
@@ -55,6 +60,10 @@ public final class Session {
         return author;
     }
 
+    public int getPhraseId() {
+        return phraseId;
+    }
+
     public boolean isImported() {
         return imported;
     }
@@ -64,6 +73,7 @@ public final class Session {
         return "Session{" +
                 "currentPhrase='" + currentPhrase + '\'' +
                 ", author='" + author + '\'' +
+                ", phraseId=" + phraseId +
                 ", date='" + date + '\'' +
                 ", imported=" + imported +
                 '}';

@@ -3,6 +3,7 @@
     <string name="author">Author</string>
     <string name="action_settings">Configurações</string>
     <string name="action_share">Compartilhar</string>
+    <string name="action_favorite">Marcar como favorita</string>
 
     <!-- P -->
     <string name="app_name">Pills</string>

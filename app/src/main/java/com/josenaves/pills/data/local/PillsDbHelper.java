@@ -34,7 +34,8 @@ public class PillsDbHelper extends SQLiteOpenHelper {
                 PhraseContract.PhraseEntry.COLUMN_NAME_PHRASE + TEXT_TYPE + COMMA_SEP +
                 PhraseContract.PhraseEntry.COLUMN_NAME_AUTHOR + TEXT_TYPE + COMMA_SEP +
                 PhraseContract.PhraseEntry.COLUMN_NAME_VIEWS + INTEGER_TYPE + COMMA_SEP +
-                PhraseContract.PhraseEntry.COLUMN_NAME_SHARED + INTEGER_TYPE +
+                PhraseContract.PhraseEntry.COLUMN_NAME_SHARED + INTEGER_TYPE + COMMA_SEP +
+                PhraseContract.PhraseEntry.COLUMN_NAME_FAVORITE + INTEGER_TYPE +
                 ")";
 
     private static PillsDbHelper instance = null;
