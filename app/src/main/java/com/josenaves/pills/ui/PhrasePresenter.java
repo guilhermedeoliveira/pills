@@ -8,27 +8,32 @@ import com.josenaves.pills.BuildConfig;
 
 import com.josenaves.pills.data.PhraseRepository;
 import com.josenaves.pills.data.SessionRepository;
+import com.josenaves.pills.data.TrackingRepository;
 import com.josenaves.pills.data.model.Phrase;
 import com.josenaves.pills.data.model.Session;
 import com.josenaves.pills.util.DateUtils;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-public class PhrasePresenter implements PhraseContract.Presenter {
+class PhrasePresenter implements PhraseContract.Presenter {
 
-    public static final String TAG = PhrasePresenter.class.getSimpleName();
+    private static final String TAG = PhrasePresenter.class.getSimpleName();
 
     private final PhraseRepository phraseRepository;
     private final SessionRepository sessionRepository;
+    private final TrackingRepository trackingRepository;
 
     private final PhraseContract.View phraseView;
 
-    public PhrasePresenter(@NonNull PhraseRepository phraseRepository,
-                           @NonNull SessionRepository sessionRepository,
-                           @NonNull PhraseContract.View phraseView) {
+    PhrasePresenter(@NonNull PhraseRepository phraseRepository,
+                    @NonNull SessionRepository sessionRepository,
+                    @NonNull TrackingRepository trackingRepository,
+                    @NonNull PhraseContract.View phraseView) {
 
         this.phraseRepository = checkNotNull(phraseRepository, "phraseRepository cannot be null!");
         this.sessionRepository = checkNotNull(sessionRepository, "sessionRepository cannot be null!");
+        this.trackingRepository = checkNotNull(trackingRepository, "trackingRepository cannot be null!");
+
         this.phraseView = checkNotNull(phraseView, "phraseView cannot be null!");
 
         this.phraseView.setPresenter(this);
@@ -63,7 +68,6 @@ public class PhrasePresenter implements PhraseContract.Presenter {
         }
     }
 
-    // TODO Modifiquei esse método
     private void getAndShowNewPhrase() {
         // make it happen
         Phrase phrase = phraseRepository.getRandomPhrase();
@@ -82,7 +86,6 @@ public class PhrasePresenter implements PhraseContract.Presenter {
 
     @Override
     public void getPhraseToShare() {
-        // TODO Verificar a implementação
         String shareablePhrase = sessionRepository.loadSession()
                 .getShareablePhrase();
 
@@ -92,5 +95,10 @@ public class PhrasePresenter implements PhraseContract.Presenter {
     @Override
     public void markAsFavorite() {
         // TODO
+    }
+
+    @Override
+    public void trackShareEvent(String phrase) {
+        trackingRepository.trackShareEvent(phrase);
     }
 }

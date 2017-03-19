@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 
 import com.josenaves.pills.data.local.PhraseDataSourceImpl;
 import com.josenaves.pills.data.local.SessionDataSourceImpl;
+import com.josenaves.pills.data.remote.TrackingDataSourceImpl;
 
 /**
  * Dependency injection without frameworks
@@ -16,5 +17,9 @@ public class Injection {
 
     public static SessionRepository provideSessionRepository(@NonNull Context context) {
         return new SessionRepository(new SessionDataSourceImpl(context));
+    }
+
+    public static TrackingRepository provideTrackingRepository() {
+        return new TrackingRepository(new TrackingDataSourceImpl());
     }
 }
