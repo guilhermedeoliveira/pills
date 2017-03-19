@@ -4,6 +4,8 @@ import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.josenaves.pills.BuildConfig;
+
 import com.josenaves.pills.data.PhraseRepository;
 import com.josenaves.pills.data.SessionRepository;
 import com.josenaves.pills.data.model.Phrase;
@@ -44,17 +46,17 @@ public class PhrasePresenter implements PhraseContract.Presenter {
         // check if there is a saved phrase
         Session session = sessionRepository.loadSession();
         if (TextUtils.isEmpty(session.getCurrentPhrase())) {
-            Log.d(TAG, "There's no saved phrase yet... getting the first one !");
+            if (BuildConfig.DEBUG) Log.d(TAG, "There's no saved phrase yet... getting the first one !");
             getAndShowNewPhrase();
         } else {
             // check if saved date is today
             if (!DateUtils.getCurrentDate().equals(session.getDate())) {
-                Log.d(TAG, "This is another day... go get new phrase!");
-                Log.d(TAG, String.format("Current date: %s - session date: %s",
+                if (BuildConfig.DEBUG) Log.d(TAG, "This is another day... go get new phrase!");
+                if (BuildConfig.DEBUG) Log.d(TAG, String.format("Current date: %s - session date: %s",
                         DateUtils.getCurrentDate(), session.getDate()));
                 getAndShowNewPhrase();
             } else {
-                Log.d(TAG, "No need to get another phrase for today...");
+                if (BuildConfig.DEBUG) Log.d(TAG, "No need to get another phrase for today...");
                 Phrase phrase = new Phrase(session.getAuthor(), session.getCurrentPhrase());
                 phraseView.showPhrase(phrase);
             }
@@ -67,10 +69,15 @@ public class PhrasePresenter implements PhraseContract.Presenter {
         Phrase phrase = phraseRepository.getRandomPhrase();
         if (phrase != null) phraseView.showPhrase(phrase);
 
+        if (BuildConfig.DEBUG) Log.d(TAG, phrase.toString());
+
         // save session on database
         sessionRepository
                 .saveSession(new Session(phrase.getPhrase(), phrase.getAuthor(),
                         DateUtils.getCurrentDate(), true));
+
+        // increment the number of views
+        phraseRepository.incrementPhraseViews(phrase);
     }
 
     @Override

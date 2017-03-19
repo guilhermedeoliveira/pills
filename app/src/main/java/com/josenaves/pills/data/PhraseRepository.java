@@ -52,4 +52,10 @@ public class PhraseRepository implements PhraseDataSource {
         Log.d(TAG, "Getting random phrase...");
         return phraseDataSource.getRandomPhrase();
     }
+
+    @Override
+    public void incrementPhraseViews(Phrase phrase) {
+        Log.d(TAG, String.format("Incrementing views for phrase %s...", phrase));
+        phraseDataSource.incrementPhraseViews(phrase);
+    }
 }
