@@ -76,12 +76,14 @@ class PhrasePresenter implements PhraseContract.Presenter {
         if (BuildConfig.DEBUG) Log.d(TAG, phrase.toString());
 
         // save session on database
-        sessionRepository
-                .saveSession(new Session(phrase.getPhrase(), phrase.getAuthor(),
-                        DateUtils.getCurrentDate(), true));
+        Session session = new Session(
+                phrase.getId(),
+                phrase.getPhrase(),
+                phrase.getAuthor(),
+                DateUtils.getCurrentDate(),
+                true);
 
-        // increment the number of views
-        phraseRepository.incrementPhraseViews(phrase);
+        sessionRepository.saveSession(session);
     }
 
     @Override
@@ -94,8 +96,17 @@ class PhrasePresenter implements PhraseContract.Presenter {
 
     @Override
     public void markAsFavorite() {
-        // TODO
+        // get current phrase from session
+        Session session = sessionRepository.loadSession();
+        phraseRepository.updateFavorite(session.getPhraseId(), true);
     }
+
+    @Override
+    public void unmarkAsFavorite() {
+        // get current phrase from session
+        Session session = sessionRepository.loadSession();
+        phraseRepository.updateFavorite(session.getPhraseId(), false);
+     }
 
     @Override
     public void trackShareEvent(String phrase) {

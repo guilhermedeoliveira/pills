@@ -32,8 +32,12 @@ public class PillsApplication extends Application {
             PhraseRepository phraseRepository = Injection.providePhraseRepository(this);
             phraseRepository.importPhrases();
 
-            session = new Session(session.getCurrentPhrase(), session.getAuthor(),
+            session = new Session(
+                    session.getPhraseId(),
+                    session.getCurrentPhrase(),
+                    session.getAuthor(),
                     session.getDate(), true);
+
             sessionRepository.saveSession(session);
         } else {
             Log.d(TAG, "Phrases file was already imported :)");

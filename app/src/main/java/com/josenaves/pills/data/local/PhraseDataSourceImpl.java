@@ -17,6 +17,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.josenaves.pills.data.local.PillsDbHelper.TRUE;
+
 /**
  * Provides access to phrases.
  */
@@ -45,7 +47,7 @@ public class PhraseDataSourceImpl implements PhraseDataSource {
                 String[] record = line.split(SEPARATOR);
                 String citation = record[0];
                 String author = record[1];
-                final Phrase phrase = new Phrase(0, author, citation, 0, 0);
+                final Phrase phrase = new Phrase(author, citation);
 
                 //save on database
                 savePhrase(phrase, new NewPhraseCallback() {
@@ -151,6 +153,17 @@ public class PhraseDataSourceImpl implements PhraseDataSource {
     }
 
     @Override
+    public void updateFavorite(int phraseId, boolean favorite) {
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        String filter = String.format("%s=%d", PhraseContract.PhraseEntry._ID, phraseId);
+        ContentValues values = new ContentValues();
+        values.put(PhraseContract.PhraseEntry.COLUMN_NAME_FAVORITE, favorite);
+
+        int rows = db.update(PhraseContract.PhraseEntry.TABLE_NAME, values, filter, null);
+        if (BuildConfig.DEBUG) Log.d(TAG, String.format("Rows updated: %s", rows));
+    }
+
+    @Override
     public void incrementPhraseViews(Phrase phrase) {
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String filter = String.format("%s=%d", PhraseContract.PhraseEntry._ID, phrase.getId());
@@ -162,13 +175,14 @@ public class PhraseDataSourceImpl implements PhraseDataSource {
     }
 
     private Phrase createPhrase(final Cursor cursor) {
-        long id = cursor.getLong(cursor.getColumnIndex(PhraseContract.PhraseEntry._ID));
+        int id = cursor.getInt(cursor.getColumnIndex(PhraseContract.PhraseEntry._ID));
         String phrase = cursor.getString(cursor.getColumnIndex(PhraseContract.PhraseEntry.COLUMN_NAME_PHRASE));
         String author = cursor.getString(cursor.getColumnIndex(PhraseContract.PhraseEntry.COLUMN_NAME_AUTHOR));
         long views = cursor.getLong(cursor.getColumnIndex(PhraseContract.PhraseEntry.COLUMN_NAME_VIEWS));
         long shared = cursor.getLong(cursor.getColumnIndex(PhraseContract.PhraseEntry.COLUMN_NAME_SHARED));
+        boolean favorite = cursor.getLong(cursor.getColumnIndex(PhraseContract.PhraseEntry.COLUMN_NAME_FAVORITE)) == 1;
 
-        return new Phrase(id, author, phrase, views, shared);
+        return new Phrase(id, author, phrase, views, shared, favorite);
     }
 
     private String[] getProjection() {
@@ -178,6 +192,7 @@ public class PhraseDataSourceImpl implements PhraseDataSource {
                 PhraseContract.PhraseEntry.COLUMN_NAME_AUTHOR,
                 PhraseContract.PhraseEntry.COLUMN_NAME_VIEWS,
                 PhraseContract.PhraseEntry.COLUMN_NAME_SHARED,
+                PhraseContract.PhraseEntry.COLUMN_NAME_FAVORITE
         };
     }
 }

@@ -26,9 +26,11 @@ public class SessionDataSourceImpl implements SessionDataSource {
         SharedPreferences.Editor edit = pref.edit();
         edit.putString(Session.PHRASE, session.getCurrentPhrase());
         edit.putString(Session.AUTHOR, session.getAuthor());
+        edit.putInt(Session.PHRASE_ID, session.getPhraseId());
+
         edit.putString(Session.DATE, session.getDate());
         edit.putBoolean(Session.IMPORTED, session.isImported());
-        edit.commit();
+        edit.apply();
     }
 
     @Override
@@ -37,7 +39,8 @@ public class SessionDataSourceImpl implements SessionDataSource {
         String phrase = pref.getString(Session.PHRASE, "");
         String date = pref.getString(Session.DATE, "");
         String author = pref.getString(Session.AUTHOR, "");
+        int phraseId = pref.getInt(Session.PHRASE_ID, 0);
         boolean imported = pref.getBoolean(Session.IMPORTED, false);
-        return new Session(phrase, author, date, imported);
+        return new Session(phraseId, phrase, author, date, imported);
     }
 }

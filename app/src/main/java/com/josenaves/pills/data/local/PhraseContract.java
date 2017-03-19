@@ -13,5 +13,6 @@ public interface PhraseContract {
         String COLUMN_NAME_AUTHOR = "author";
         String COLUMN_NAME_VIEWS = "views";
         String COLUMN_NAME_SHARED = "shared";
+        String COLUMN_NAME_FAVORITE = "favorite";
     }
 }

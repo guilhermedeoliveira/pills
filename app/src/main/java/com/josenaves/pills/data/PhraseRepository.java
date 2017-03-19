@@ -12,7 +12,7 @@ public class PhraseRepository implements PhraseDataSource {
 
     private final PhraseDataSource phraseDataSource;
 
-    public PhraseRepository(PhraseDataSource phraseDataSource) {
+    PhraseRepository(PhraseDataSource phraseDataSource) {
         this.phraseDataSource = phraseDataSource;
     }
 
@@ -51,6 +51,12 @@ public class PhraseRepository implements PhraseDataSource {
     public Phrase getRandomPhrase() {
         Log.d(TAG, "Getting random phrase...");
         return phraseDataSource.getRandomPhrase();
+    }
+
+    @Override
+    public void updateFavorite(int phraseId, boolean favorite) {
+        Log.d(TAG, String.format("Updating favorite flag (%s) for phraseId %d...", favorite, phraseId));
+        phraseDataSource.updateFavorite(phraseId, favorite);
     }
 
     @Override
